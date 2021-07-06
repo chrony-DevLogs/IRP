@@ -109,9 +109,6 @@ nav ul li:hover{
 
 }
 
-.About div {
-}
-
 .About > h1{
     font-size: 50px;
     text-align: center;
@@ -184,6 +181,7 @@ footer{
     background-color: rgb(153, 222, 245);
     margin-top: 100px;
     text-align: center;
+    box-shadow: 0 -1px 10px rgba(128, 128, 128, 0.644);
 
 }
 
@@ -191,4 +189,105 @@ footer h1{
     color: snow;
     font-size: 25px;
     padding-top: 35px;
+}
+
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.serDiv{
+    height: 270px;
+    width: 200px;
+    margin: 25px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px 2px gray,-1px -1px 7px 2px gray;
+    background: rgba(128, 128, 128, 0.164);
+
+}
+
+
+.innerserDiv{
+    background: rgba(128, 128, 128, 0.747);
+}
+
+
+.innerserDiv > h1{
+    text-align: center;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+.serDiv1{
+    background: url("../photos/img1.jpg") center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.serDiv2{
+    background: url("../photos/img2.jpg") center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.serDiv3{
+    background: url("../photos/img3.jpg") center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.serDiv4{
+    background: url("../photos/img4.jpg") center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.serDiv5{
+    background: url("../photos/img5.jpg") center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.serDiv6{
+    background: url("../photos/img6.png") center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.serDiv7{
+    background: url("../photos/img7.JPG") center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.sectionService > h1{
+    text-align: center;
+    margin: 50px;
+    font-size: 50px;
+}
+
+.onCnt{
+    background: none;
+    border: 1px solid rgb(153, 222, 245) ;
+    color: rgb(153, 222, 245);
+    border-radius: 20px;
+    font-size: 20px;
+    height: 40px;
+    width: 100px;
+    float: right;
+}
+
+.serDiv1 .onCnt,.serDiv3 .onCnt,.serDiv5 .onCnt,.serDiv6 .onCnt{
+    margin-top: 175px;
+}
+
+
+.serDiv2 .onCnt,.serDiv4 .onCnt,.serDiv7 .onCnt{
+    margin: 150px 10px  0;
+}
+.onCnt:hover{
+    color: snow;
+    background-color: rgb(153, 222, 245);
+    transition: .3s;
 }
