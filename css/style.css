@@ -45,7 +45,6 @@ nav ul li{
 nav ul li:hover{
     color: rgb(153, 222, 245);
     text-shadow: 1px 1px 1px  rgb(182, 255, 255);
-
     transition: .3s;
 }
 
@@ -298,7 +297,7 @@ footer h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    
 }
 
 #popUp h1{
@@ -307,4 +306,20 @@ footer h1{
 
 #popUp p , #popUp i{ 
     font-size: 30px;
+}
+
+#Gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+}
+
+.photo{
+    border-radius: 10px 50px;
+    height: 250px;
+    width: 250px;
+    margin: 10px;
+    box-shadow: 1px 1px 7px 2px rgba(128, 128, 128, 0.514),-1px -1px 7px 2px rgba(128, 128, 128, 0.514);
+
 }
