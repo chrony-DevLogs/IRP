@@ -279,15 +279,32 @@ footer h1{
 }
 
 .serDiv1 .onCnt,.serDiv3 .onCnt,.serDiv5 .onCnt,.serDiv6 .onCnt{
-    margin-top: 175px;
+    margin: 165px  10px  0;
 }
 
 
 .serDiv2 .onCnt,.serDiv4 .onCnt,.serDiv7 .onCnt{
-    margin: 150px 10px  0;
+    margin: 140px 10px  0;
 }
 .onCnt:hover{
     color: snow;
     background-color: rgb(153, 222, 245);
     transition: .3s;
+}
+
+#popUp{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#popUp h1{
+    font-size: 50px;
+}
+
+#popUp p , #popUp i{ 
+    font-size: 30px;
 }
