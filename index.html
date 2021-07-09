@@ -72,14 +72,14 @@
     <hr>
     <section class="contact" id="cont">
         <div>   
-            <form method="POST">
+            <div>
                 <input type="text" name="userN" id="Name" placeholder=" User name">
                 <input type="text" name="Email" id="EmailAddr" placeholder=" Email">
                 <br>
                 <textarea name="yourMail" id="mailUs" cols="60" rows="10"></textarea>
                 <br>
-                <input class="ccBtn" type="submit" name="" id="">
-            </form> 
+                <input class="ccBtn" type="submit" name="" id="pushIt">
+            </div>
         </div>
         <div class="contactF2">
             <h3>Nous sommes prêts à vous aider</h3>
@@ -100,7 +100,14 @@
 </body>
 <footer class="cpr">
     <h1>tous droits réserves © 2021 Ce site est réalisé par project flyu</h1>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("user_lztIRxm2SbsBKGZDVIs2g");
+        })();
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </footer>
 </html>

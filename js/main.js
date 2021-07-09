@@ -29,5 +29,38 @@ photos.forEach(item =>{
     })
 })
 
-//Send mail
 
+/* User ID user_lztIRxm2SbsBKGZDVIs2g
+Access Token 15e3dc9b9ca6ca50ce1482acd3eb5276
+*/
+
+var userName = document.getElementById("Name");
+var email = document.getElementById("EmailAddr");
+var content = document.getElementById("mailUs");
+var submit = document.getElementById("pushIt");
+
+function sendMail(name,mail,text){
+    
+    swal("Bon", "Courrier a été envoyé!", "success");
+
+    emailjs.send("service_o5z2z3y","template_a778ul3",{
+    from_name: `${name.value}: ${mail.value}`,
+    to_name: "IRRI PRO",
+    message: text.value,
+    });
+    
+}
+
+ submit.addEventListener("click",()=>{
+    if(userName.value == "" || email.value == "" || content.value == ""){
+
+        swal("Opps", "une chaîne de caractères est vide!", "warning");
+
+        userName.value == "";
+        email.value == "";
+        content.value == "";
+    }
+    else{
+    sendMail(userName,email,content)
+    }
+})
