@@ -8,7 +8,7 @@ section{
     padding: 0 20px;
 }
 h1 ,h2 ,h3 ,h4 {
-    color: rgb(153, 222, 245);
+    color:  #0099ff;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -17,8 +17,6 @@ p{
 }
 
 .logo{
-    color: rgb(153, 222, 245);
-
     display: inline;
     letter-spacing: 8px;
 }
@@ -43,53 +41,16 @@ nav ul li{
     cursor: pointer;
 }
 nav ul li:hover{
-    color: rgb(153, 222, 245);
-    text-shadow: 1px 1px 1px  rgb(182, 255, 255);
+    color: #0099ff;
+    text-shadow: 1px 1px 1px  #0099ff;
+
     transition: .3s;
 }
 
 .main{
-    color: rgb(153, 222, 245);
-    text-shadow: 1px 1px 1px  rgb(182, 255, 255);
+    color: #0099ff;
+    text-shadow: 1px 1px 1px  #0099ff;
 
-}
-
-.cont .intro{
-    margin-top: 100px;
-    text-align: center;
-    height: 200px;
-    font-size: 50px;
-}
-
-.Features{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-
-}
-
-
-.Feature{
-    width: 350px;
-    height: 200px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 7px 2px rgb(169, 169, 169),-2px -2px 7px 2px rgb(169, 169, 169);
-    margin: 10px;
-    padding: 30px;
-    text-align: center;
-}
-
-.Feature i{
-    color: snow;
-    font-size: 40px;
-}
-.Feature p {
-    font-size: 15px;
-    color: snow;
-}
-
-.Feature h3 {
-    color: snow;
 }
 
 .About{
@@ -114,25 +75,89 @@ nav ul li:hover{
 }
 
 .About p{
-    font-size: 25px;
+    font-size: 20px;
 
 }
 
-.About button{
+.cow{
+    width: 400px;
+}
+
+.ccBtn{
     font-size: 25px;
     background: none;
-    border: 1px solid rgb(153, 222, 245) ;
+    border: 1px solid #0099ff;
     height: 60px;
     width: 200px;
     border-radius: 20px;
-    margin: 50px 10px;
-    color: rgb(153, 222, 245);
+    margin: 20px;
+    color: #0099ff;
 }
 
-.About button:hover{
+.ccBtn:hover{
     color: snow;
-    background-color: rgb(153, 222, 245);
+    background-color: #0099ff;
     transition: .3s;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.item{
+    height: 250px;
+    width: 250px;
+    box-shadow: 1px 1px 7px 2px gray,-1px -1px 7px 2px gray;
+    margin: 30px;
+    text-align: center;
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.item > h2{
+    font-weight: bold;
+}
+
+.item1{
+    border-radius: 100%;
+    background: url("../photos/Conseil.jpg") center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.item2{
+    border-radius: 10%;
+    background: url("../photos/engineering.jpg") center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item3{
+    border-radius: 10px;
+    width: 350px;
+    background: url("../photos/work.JPG") center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item4{
+    border-radius: 50px 0 50px 0;
+    background: url("../photos/Assistance.jpg") center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item5{
+    border-radius: 0 50px 0 50px;
+    background: url("../photos/reparing.jpg") center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .contact{
@@ -147,12 +172,12 @@ nav ul li:hover{
     margin-bottom: 10px;
     height: 40px;
     width: 218px;
-    border: solid 1px rgb(153, 222, 245);
+    border: solid 1px #0099ff;
     outline: none;
 }
 
 #mailUs{
-    border: solid 1px rgb(153, 222, 245);
+    border: solid 1px #0099ff;
     outline: none;
 }
 
@@ -168,7 +193,7 @@ nav ul li:hover{
 }
 
 .fa-envelope{
-    color: rgb(153, 222, 245);
+    color: #0099ff;
 }
 
 .fa-whatsapp{
@@ -177,7 +202,7 @@ nav ul li:hover{
 
 footer{
     height: 100px;
-    background-color: rgb(153, 222, 245);
+    background-color: #0099ff;
     margin-top: 100px;
     text-align: center;
     box-shadow: 0 -1px 10px rgba(128, 128, 128, 0.644);
@@ -194,6 +219,7 @@ footer h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0 100px;
 }
 
 
@@ -209,7 +235,8 @@ footer h1{
 
 
 .innerserDiv{
-    background: rgba(128, 128, 128, 0.747);
+    background: rgba(222, 249, 255, 0.87);
+    border-radius: 10px 10px 0 0;
 }
 
 
@@ -248,7 +275,7 @@ footer h1{
     background-repeat: no-repeat;
 }
 .serDiv6{
-    background: url("../photos/img6.png") center;
+    background: url("../photos/img6.jpg") center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -268,8 +295,9 @@ footer h1{
 
 .onCnt{
     background: none;
-    border: 1px solid rgb(153, 222, 245) ;
-    color: rgb(153, 222, 245);
+    border: 1px solid #0099ff ;
+    color: #0099ff;
+    background-color: snow;
     border-radius: 20px;
     font-size: 20px;
     height: 40px;
@@ -277,17 +305,17 @@ footer h1{
     float: right;
 }
 
-.serDiv1 .onCnt,.serDiv3 .onCnt,.serDiv5 .onCnt,.serDiv6 .onCnt{
+.serDiv1 .onCnt,.serDiv3 .onCnt{
     margin: 165px  10px  0;
 }
 
 
-.serDiv2 .onCnt,.serDiv4 .onCnt,.serDiv7 .onCnt{
+.serDiv2 .onCnt,.serDiv4 .onCnt,.serDiv5 .onCnt,.serDiv7 .onCnt,.serDiv6 .onCnt{
     margin: 140px 10px  0;
 }
 .onCnt:hover{
     color: snow;
-    background-color: rgb(153, 222, 245);
+    background-color: #0099ff;
     transition: .3s;
 }
 
@@ -297,7 +325,7 @@ footer h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 #popUp h1{
@@ -316,10 +344,25 @@ footer h1{
 }
 
 .photo{
+    text-align: center;
     border-radius: 10px 50px;
     height: 250px;
     width: 250px;
     margin: 10px;
     box-shadow: 1px 1px 7px 2px rgba(128, 128, 128, 0.514),-1px -1px 7px 2px rgba(128, 128, 128, 0.514);
+    background-color: #0099ff;
 
+}
+
+.photo img{
+    height: 100%;
+    width:  100%;
+    border-radius: 10px 50px;
+}
+
+.photo img:hover{
+    height: 110%;
+    width:  110%;
+    padding: 10px;
+    transition: .3s;
 }
