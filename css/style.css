@@ -141,7 +141,7 @@ nav ul li:hover{
 .item3{
     border-radius: 10px;
     width: 350px;
-    background: url("../photos/work.JPG") center;
+    background: url("../photos/work.jpg") center;
     background-repeat: no-repeat;
     background-size: cover;
 }
