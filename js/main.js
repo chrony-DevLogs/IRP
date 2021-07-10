@@ -29,7 +29,7 @@ photos.forEach(item =>{
     })
 })
 
-
+// send Email
 var userName = document.getElementById("Name");
 var email = document.getElementById("EmailAddr");
 var content = document.getElementById("mailUs");
