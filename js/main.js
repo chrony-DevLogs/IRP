@@ -30,10 +30,6 @@ photos.forEach(item =>{
 })
 
 
-/* User ID user_lztIRxm2SbsBKGZDVIs2g
-Access Token 15e3dc9b9ca6ca50ce1482acd3eb5276
-*/
-
 var userName = document.getElementById("Name");
 var email = document.getElementById("EmailAddr");
 var content = document.getElementById("mailUs");
