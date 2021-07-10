@@ -37,7 +37,7 @@ var submit = document.getElementById("pushIt");
 
 function sendMail(name,mail,text){
     
-    swal("Bon", "Courrier a été envoyé!", "success");
+    swal("Merci!", "Courrier a été envoyé!", "success");
 
     emailjs.send("service_o5z2z3y","template_a778ul3",{
     from_name: `${name.value}: ${mail.value}`,
