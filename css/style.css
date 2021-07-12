@@ -400,6 +400,18 @@ footer h1{
     height: 500px;
 }
 
+.vues{
+    text-align: center;
+}
+
+.vues i {
+    font-size: 50px;
+}
+
+.vues h1 {
+    font-size: 70px;
+}
+
 @media screen and (max-width: 720px){
 
     nav ul li{

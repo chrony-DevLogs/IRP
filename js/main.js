@@ -60,3 +60,15 @@ function sendMail(name,mail,text){
     sendMail(userName,email,content)
     }
 })
+
+// veiws system
+
+var counter = document.getElementById("count");
+
+update()
+
+function update(){
+    fetch("https://api.countapi.xyz/update/irripro/irp?amount=1").then(res => res.json()).then(res => {
+        counter.innerHTML = res.value
+    })
+}
