@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    padding: 0 10px;
+}
+
 section{
     padding: 0 20px;
 }
@@ -379,6 +383,23 @@ footer h1{
     transition: .3s;
 }
 
+.slider{
+    padding: 0;
+    margin: 0 auto;
+    width: 800px;
+    border-radius: 100px 100px;
+    overflow: hidden;
+
+}
+
+.slider img {
+    border-radius: 100px 100px;
+}
+
+.lol{
+    height: 500px;
+}
+
 @media screen and (max-width: 720px){
 
     nav ul li{
@@ -397,4 +418,10 @@ footer h1{
         padding: 0;
     }
 
+    .lol{
+        height: 300px;
+    }
+    .slider{
+        width: auto;
+    }
 }
