@@ -10,8 +10,7 @@ service.forEach(element => {
     element.addEventListener("mouseover",()=>{
         element.appendChild(contBtn)
         contBtn.addEventListener("click",()=>{
-            window.open("popup.html")
-
+             window.open("popup.html")
         })
     })
     element.addEventListener("mouseleave",()=>{
