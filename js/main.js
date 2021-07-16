@@ -2,6 +2,8 @@
 
 const service = document.querySelectorAll(".serDiv");
 const contBtn = document.createElement("button");
+const popup = document.querySelector(".popup")
+const exit = document.querySelector(".exitBtn")
 
 contBtn.innerHTML = "Contact!"
 contBtn.setAttribute("class","onCnt")
@@ -10,15 +12,19 @@ service.forEach(element => {
     element.addEventListener("mouseover",()=>{
         element.appendChild(contBtn)
         contBtn.addEventListener("click",()=>{
-             window.open("popup.html")
+             popup.style.visibility = "visible"
         })
     })
+exit.addEventListener("click",()=>{
+    
+    popup.style.visibility = "hidden"
+})
     element.addEventListener("mouseleave",()=>{
         element.removeChild(contBtn)
     })
 });
 
-//setting up gallery
+//PopUp photos 
 
 const photos = document.querySelectorAll(".image");
 
@@ -71,3 +77,4 @@ function update(){
         counter.innerHTML = res.value
     })
 }
+

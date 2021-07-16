@@ -89,6 +89,10 @@ nav ul li:hover{
 
 }
 
+.ab{
+    display: inline-block;
+}
+
 .cow{
     width: 400px;
 }
@@ -185,7 +189,7 @@ nav ul li:hover{
     justify-content: space-around;
 }
 
-#Name , #EmailAddr {
+#Name , #EmailAddr{
     padding: 5px;
     margin-bottom: 10px;
     height: 40px;
@@ -193,6 +197,7 @@ nav ul li:hover{
     border: solid 1px #0099ff;
     outline: none;
 }
+
 
 #mailUs{
     border: solid 1px #0099ff;
@@ -309,6 +314,87 @@ footer h1{
     padding: 200px 50px 0;
 }
 
+.popup{
+    position: fixed;
+    bottom: 0%;
+    right: 0px;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.212);
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+}
+.popupDiv{
+    margin-top: 100px;
+    background: rgba(255, 250, 250, 0.623);
+    border-radius: 10px;
+    height: 600px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 1px 1px 10px rgba(90, 90, 90, 0.438),-1px -1px 10px rgba(46, 46, 46, 0.438);
+}
+
+
+.inp{
+    padding: 5px;
+    border: solid 1px #0099ff;
+    outline: none;
+    width: 250px;
+}
+
+.popupDiv h1 {
+    margin-bottom: 30px;
+}
+
+.popupDiv input{
+    margin: 10px;
+    height: 35px;
+}
+
+.exit{
+position: relative;
+    bottom: 8%;
+    left: 39%;
+}
+
+.exit button{
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: #0099ff;
+
+}
+
+.inpBtn{
+    background: none;
+    border: 1px solid #0099ff ;
+    color: #0099ff;
+    background-color: snow;
+    border-radius: 20px;
+    font-size: 20px;
+    height: 60px;
+    margin: 10px;
+    width: 200px;
+}
+
+.inpBtn:hover{
+    color: snow;
+    background-color: #0099ff;
+    transition: .3s;
+}
+
+.exit button:hover{
+    color: red;
+}
+
 .onCnt{
     background: none;
     border: 1px solid #0099ff ;
@@ -333,23 +419,6 @@ footer h1{
     color: snow;
     background-color: #0099ff;
     transition: .3s;
-}
-
-#popUp{
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-#popUp h1{
-    font-size: 50px;
-}
-
-#popUp p , #popUp i{ 
-    font-size: 30px;
 }
 
 #Gallery{
@@ -435,5 +504,8 @@ footer h1{
     }
     .slider{
         width: auto;
+    }
+    .popupDiv{
+        height: 500px;
     }
 }
