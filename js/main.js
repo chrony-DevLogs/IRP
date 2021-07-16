@@ -2,8 +2,6 @@
 
 const service = document.querySelectorAll(".serDiv");
 const contBtn = document.createElement("button");
-const popup = document.querySelector(".popup")
-const exit = document.querySelector(".exitBtn")
 
 contBtn.innerHTML = "Contact!"
 contBtn.setAttribute("class","onCnt")
@@ -12,17 +10,15 @@ service.forEach(element => {
     element.addEventListener("mouseover",()=>{
         element.appendChild(contBtn)
         contBtn.addEventListener("click",()=>{
-             popup.style.visibility = "visible"
+             window.open("popup.html","","width=400px height = 500px")
         })
     })
-exit.addEventListener("click",()=>{
-    
-    popup.style.visibility = "hidden"
-})
     element.addEventListener("mouseleave",()=>{
         element.removeChild(contBtn)
     })
 });
+
+var inpBtn = document.querySelector(".inpBtn")
 
 //PopUp photos 
 
@@ -41,18 +37,6 @@ var content = document.getElementById("mailUs");
 var submit = document.getElementById("pushIt");
 
 function sendMail(name,mail,text){
-    
-    swal("Merci!", "Courrier a été envoyé!", "success");
-
-    emailjs.send("service_o5z2z3y","template_a778ul3",{
-    from_name: `${name.value}: ${mail.value}`,
-    to_name: "IRRI PRO",
-    message: text.value,
-    });
-    
-}
-
- submit.addEventListener("click",()=>{
     if(userName.value == "" || email.value == "" || content.value == ""){
 
         swal("Opps", "une chaîne de caractères est vide!", "warning");
@@ -62,8 +46,20 @@ function sendMail(name,mail,text){
         content.value == "";
     }
     else{
-    sendMail(userName,email,content)
+        swal("Merci!", "Courrier a été envoyé!", "success");
+
+        emailjs.send("service_o5z2z3y","template_a778ul3",{
+        from_name: `${name.value}: ${mail.value}`,
+        to_name: "IRRI PRO",
+        message: text.value,
+        });
     }
+
+    
+}
+
+ submit.addEventListener("click",()=>{
+    sendMail(userName,email,content)
 })
 
 // veiws system
@@ -77,4 +73,3 @@ function update(){
         counter.innerHTML = res.value
     })
 }
-

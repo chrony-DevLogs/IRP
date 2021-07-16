@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="popup">
+        <div class="popupDiv">
+            <h1>Confirmez votre <br> choix</h1>
+            <label for="Serv">Select a service</label>
+            <br>
+            <select class="inp inpServ" name="serv" id="Serv">
+                <option value="Arrosage">Arrosage</option>
+                <option value="station de pompage">station de pompage</option>
+                <option value="jardinage">jardinage</option>
+                <option value="Création de bassin">Création de bassin</option>
+                <option value="brumisation haute pression">brumisation haute pression</option>
+                <option value="microclimate sous serre">microclimate sous serre</option>
+                <option value="station d'épuration">station d'épuration</option>
+            </select>
+            <br>
+            <input class="inp Nom" type="text" placeholder=" Nom">
+            <br>
+            <input class="inp Phone" type="text" placeholder=" téléphone" value=" +216 ">
+            <br>
+            <button class="inpBtn">Envoyer</button>
+        </div>
+    </section>
+    <script>
+            var content = document.querySelector(".inpServ");
+            var userName = document.querySelector(".Nom");
+            var email = document.querySelector(".Phone")
+
+        function sendMail(name,mail,text){
+            if(userName.value == "" || email.value == "" || content.value == ""){
+
+                swal("Opps", "une chaîne de caractères est vide!", "warning");
+
+                userName.value == "";
+                email.value == "";
+                content.value == "";
+            }
+            else{
+                swal("Merci!", "Courrier a été envoyé!", "success");
+
+                emailjs.send("service_o5z2z3y","template_a778ul3",{
+                from_name: `${name.value}: ${mail.value}`,
+                to_name: "IRRI PRO",
+                message: text.value,
+                });
+            }
+
+            
+        }
+
+        var inpBtn = document.querySelector(".inpBtn");
+
+        inpBtn.addEventListener("click",()=>{
+
+
+            sendMail(userName,email,content)
+
+        })
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("user_lztIRxm2SbsBKGZDVIs2g");
+        })();
+    </script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body> 
+</html>
