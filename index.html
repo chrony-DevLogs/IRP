@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta >
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fontawesome/css/all.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -14,103 +15,124 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="topNav">
             <ul>
                 <h1 class="logo">IRRIPRO</h1>
                 <li class="main">Home</li></a>
                 <a href="service.htm"><li>Services</li></a>
                 <a href="Gallery.html"><li>Gallery</li></a>
+                <div class="burgur">
+                    <div class="slice slice1"></div>
+                    <div class="slice slice2"></div>
+                    <div class="slice slice3"></div>
+                </div>
             </ul>
         </nav>
     </header>
-    <section class="About">
-        <h1 class="intro"><span style="letter-spacing: 8px;">IRRIPRO</span><br> vous fournira les meilleurs services</h1>
-        <div class="AAABOUT">
-            <div class="ab" >
-                <h2>À propos de nous :</h2>
-                <br>
-                <p>
-                    IRRI-PRO est une société de conception, d’études et de réalisations de <br> 
-                    travaux clés en mains. Elle offre également des prestations de conseil, d’assistance <br>
-                    technique dans des domaines hydrauliques très variés notamment : l’Arrosage <br>
-                    automatique, la Brumisation Haute Pression, l’Épuration des eaux, la Désinfection <br>
-                    des eaux, le Pompage… <br>
-                    La société fut créée en Novembre 2013 par son actuel gérant Monsieur <br>
-                    ABDESSATTAR HANNACHI. Elle intervient sur tout le territoire Tunisien, pour <br>
-                    appliquer son savoir faire dans ses différents domaines d’activités : <br>
-                </p>
-            </div>
-            <div class="ab">
-                <img class="cow" src="photos/ssqd.jpg" alt="">
-                <br>
-                <a href="service.htm"><button class="ccBtn">Services <i class="fas fa-arrow-right"></i></button></a>
-                <a href="#cont"><button class="ccBtn">Contact <i class="fas fa-arrow-down"></i></button></a>
-            </div>
-        </div>
-    </section>
-    <section class="Future">
-        <div class="items">
-            <div class="itemChild">
-                <div class="item item1">
+    <aside class="sideNav" style="left: 60%;">
+        <ul>
+            <li class="main">Home</li>
+            <a href="service.htm" class="sideLink"><li>Services</li></a>
+            <a href="Gallery.html" class="sideLink"><li>Gallery</li></a>
+        </ul>
+    </aside>
+    <main>
+        <div itemscope itemtype="https://schema.org/Organization">
+            <section class="About">
+                <h1 class="intro"><span style="letter-spacing: 8px;"><span itemprop="name">IRRIPRO</span></span><br> vous fournira les meilleurs services</h1>
+                <div class="AAABOUT">
+                    <div class="ab" >
+                        <h2>À propos de nous :</h2>
+                        <br>
+                        <p>
+                            IRRI-PRO est une société de conception, d’études et de réalisations de <br> 
+                            travaux clés en mains. Elle offre également des prestations de conseil, d’assistance <br>
+                            technique dans des domaines hydrauliques très variés notamment : l’Arrosage <br>
+                            automatique, la Brumisation Haute Pression, l’Épuration des eaux, la Désinfection <br>
+                            des eaux, le Pompage… <br>
+                            La société fut créée en Novembre 2013 par son actuel gérant Monsieur <br>
+                            ABDESSATTAR HANNACHI. Elle intervient sur tout le territoire Tunisien, pour <br>
+                            appliquer son savoir faire dans ses différents domaines d’activités : <br>
+                        </p>
+                    </div>
+                    <div class="ab">
+                        <img class="cow" src="photos/ssqd.jpg" alt="">
+                        <br>
+                        <a href="service.htm"><button class="ccBtn">Services <i class="fas fa-arrow-right"></i></button></a>
+                        <a href="#cont"><button class="ccBtn">Contact <i class="fas fa-arrow-down"></i></button></a>
+                    </div>
                 </div>
-                <h2>Conseil</h2>
-            </div>
-            <div class="itemChild">
-                <div class="item item2">
+            </section>
+            <section class="Future">
+                <div class="items">
+                    <div class="itemChild">
+                        <div class="item item1">
+                        </div>
+                        <h2>Conseil</h2>
+                    </div>
+                    <div class="itemChild">
+                        <div class="item item2">
+                        </div>
+                        <h2>Etudes, Conception <br> et engineering </h2>
+                    </div>
+                    <div class="itemChild">
+                        <div class="item item3">
+                        </div>
+                        <h2>Travaux clés en mains</h2>
+                    </div>
+                    <div class="itemChild">
+                        <div class="item item4">
+                        </div>
+                        <h2>Assistance technique</h2>
+                    </div>
+                    <div class="itemChild">
+                        <div class="item item5">
+                        </div>
+                        <h2>Maintenance</h2>
+                    </div>
                 </div>
-                <h2>Etudes, Conception <br> et engineering </h2>
-            </div>
-            <div class="itemChild">
-                <div class="item item3">
+            </section>
+            <hr>
+            <section class="vues">
+                <i class="far fa-eye"></i>
+                <h2>Visite</h2>
+                <h1 id="count">0</h1>
+                <h2>Fois</h2>
+            </section>
+            <hr>
+            <section class="contact" id="cont">
+                <div>   
+                    <div>
+                        <h1 style="padding: 30px 0;">Envoyez-nous un email</h1>
+                        <input type="text" name="userN" id="Name" placeholder=" Nom d'utilisateur">
+                        <input type="text" name="Email" id="EmailAddr" placeholder=" Email">
+                        <br>
+                        <textarea name="yourMail" id="mailUs" cols="60" rows="10"></textarea>
+                        <br>
+                        <input class="ccBtn" type="submit" name="" id="pushIt">
+                    </div>
                 </div>
-                <h2>Travaux clés en mains</h2>
-            </div>
-            <div class="itemChild">
-                <div class="item item4">
+                <div class="contactF2">
+                    <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                        <h3>Nous sommes prêts à vous aider</h3>
+                        <br>
+                        <p><i class="fas fa-envelope cl" style="color: gray;"></i><span itemprop="email">abdsattarhannachi@yahoo.fr</span></p>
+                        <p id="wassap"><i class="fas fa-phone-alt" style="color: gray;"></i><span itemprop="telephone"> (216) 20 601 993 </span><span id="wassap"></span></p>
+                        <br>
+                        <p>Suivez nous: 
+                            <a href="https://www.facebook.com/abdsattarhannachi"><i class="fab fa-facebook cl"></i></a>
+                            <i class="fas fa-envelope cl"></i>
+                            <i class="fab fa-whatsapp cl"></i>
+                        </p>
+                        <p>Adresse: <span itemprop="streetAddress">Gobaa MANOUBA 2021 La Manouba, Tunisia</span></p>
+                        <p></span>Code postal: <span itemprop="postalCode">2021</span></p>
+                        <p> <span itemprop="addressLocality">Oued Ellil, La Manouba</span></p>
+                        <p><a itemprop="url" href="irripro.com">www.irripro.com</a></p>
+                    </div>
                 </div>
-                <h2>Assistance technique</h2>
-            </div>
-            <div class="itemChild">
-                <div class="item item5">
-                </div>
-                <h2>Maintenance</h2>
-            </div>
-        </div>
-    </section>
-    <hr>
-    <section class="vues">
-        <i class="far fa-eye"></i>
-        <h2>Visite</h2>
-        <h1 id="count">0</h1>
-        <h2>Fois</h2>
-    </section>
-    <hr>
-    <section class="contact" id="cont">
-        <div>   
-            <div>
-                <h1 style="padding: 30px 0;">Envoyez-nous un email</h1>
-                <input type="text" name="userN" id="Name" placeholder=" Nom d'utilisateur">
-                <input type="text" name="Email" id="EmailAddr" placeholder=" Email">
-                <br>
-                <textarea name="yourMail" id="mailUs" cols="60" rows="10"></textarea>
-                <br>
-                <input class="ccBtn" type="submit" name="" id="pushIt">
-            </div>
-        </div>
-        <div class="contactF2">
-            <h3>Nous sommes prêts à vous aider</h3>
-            <br>
-            <p><i class="fas fa-envelope cl" style="color: gray;"></i> abdsattarhannachi@yahoo.fr</p>
-            <br>
-            <p id="wassap"><i class="fas fa-phone-alt" style="color: gray;"></i> <span id="wassap">+216 20 601 993</span></p>
-            <br>
-            <p>Suivez nous: 
-                <a href="https://www.facebook.com/abdsattarhannachi"><i class="fab fa-facebook cl"></i></a>
-                <i class="fas fa-envelope cl"></i>
-                <i class="fab fa-whatsapp cl"></i>
-            </p>
-        </div>
-    </section>
+            </section>
+        </main>
+    </div>
     <footer class="cpr">
         <h1>tous droits réserves © 2021 Ce site est réalisé par Salhi Abdennour</h1>
     </footer>

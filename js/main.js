@@ -30,6 +30,23 @@ photos.forEach(item =>{
     })
 })
 
+//burger nav
+
+var burgur = document.querySelector(".burgur");
+var sideNav = document.querySelector(".sideNav");
+
+burgur.addEventListener("click",()=>{
+    let position = sideNav.getAttribute("style")
+
+    if(position == "left: 60%;"){
+        sideNav.style.left = "0%"
+    }
+    else{
+        sideNav.style.left = "60%"
+    }
+})
+
+
 // send Email
 var userName = document.getElementById("Name");
 var email = document.getElementById("EmailAddr");
