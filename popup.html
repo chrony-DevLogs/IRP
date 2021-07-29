@@ -16,9 +16,9 @@
     <section class="popup">
         <div class="popupDiv">
             <h1>Confirmez votre <br> choix</h1>
-            <label for="Serv">Select a service</label>
             <br>
             <select class="inp inpServ" name="serv" id="Serv">
+                <option value="" selected>Chouse un service</option>
                 <option value="Arrosage">Arrosage</option>
                 <option value="station de pompage">station de pompage</option>
                 <option value="jardinage">jardinage</option>
@@ -30,7 +30,7 @@
             <br>
             <input class="inp Nom" type="text" placeholder=" Nom">
             <br>
-            <input class="inp Phone" type="text" placeholder=" téléphone" value=" +216 ">
+            <input id="ph" class="inp Phone" type="text" placeholder=" téléphone">
             <br>
             <button class="inpBtn">Envoyer</button>
         </div>

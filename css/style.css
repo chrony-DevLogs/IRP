@@ -226,7 +226,10 @@ nav ul li:hover{
 
 .cl{
     font-size: 20px;
-    margin: 10px;
+}
+
+.li{
+    margin: 10px ;
 }
 
 .fa-facebook{
